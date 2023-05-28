@@ -8,7 +8,6 @@ RUN apt-get update &&  \
     libuuid1 \
     wget
 
-# Download https://download.java.net/java/GA/jdk20.0.1/b4887098932d415489976708ad6d1a4b/9/GPL/openjdk-20.0.1_linux-x64_bin.tar.gz and extract to /usr/local
 RUN wget https://download.java.net/java/GA/jdk20.0.1/b4887098932d415489976708ad6d1a4b/9/GPL/openjdk-20.0.1_linux-x64_bin.tar.gz && \
     tar xz -C /usr/local -f openjdk-20.0.1_linux-x64_bin.tar.gz && \
     rm openjdk-20.0.1_linux-x64_bin.tar.gz \
